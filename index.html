@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live TV Channels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .title {
+            align-items: top;
+            margin-top: -20%;
+        }
+        .tv {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Align items to the left */
+            
+            width: 100%;
+            padding-left: 10%; /* Add some padding to the left for spacing */
+            padding-top: -10%;
+        }
+        .channel {
+            width: 150px; /* Fixed width for uniform size */
+            height: 150px; /* Fixed height for uniform size */
+            margin: 28px;
+            text-align: center;
+            border-color: #fff;
+            border: 5px solid #fff; /* Add border color */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            
+        }
+        .channel img {
+            width: 100%; /* Make the image fit the width of the channel div */
+            height: 100%; /* Make the image fit the height of the channel div */
+            object-fit:fill; /* Maintain aspect ratio */
+            cursor: pointer;
+    
+            
+        }
+        .channel a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .channel a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>టీవీ ఛానెల్‌లు</h1>
+    </div>
+    <div class="tv">
+        <div class="channel">
+            <a href="intent://youtube.com/watch?v=II_m28Bm-iM#Intent;package=com.google.android.youtube;end" target="_blank">
+                <img src="tv9.png" alt="Channel 1 Logo">
+            </a>
+        </div>
+        <div class="channel">
+            <a href="intent://youtube.com/watch?v=VIDEO_ID_2#Intent;package=com.google.android.youtube;end" target="_blank">
+                <img src="tv5.jpg" alt="Channel 2 Logo">
+            </a>
+        </div>
+        <div class="channel">
+            <a href="intent://youtube.com/watch?v=VIDEO_ID_3#Intent;package=com.google.android.youtube;end" target="_blank">
+                <img src="abn.jpg" alt="Channel 3 Logo">
+            </a>
+        </div>
+        <div class="channel">
+            <a href="intent://youtube.com/watch?v=VIDEO_ID_3#Intent;package=com.google.android.youtube;end" target="_blank">
+                <img src="mahaa.jpg" alt="Channel 3 Logo">
+            </a>
+        </div>
+        <div class="channel">
+            <a href="intent://youtube.com/watch?v=VIDEO_ID_3#Intent;package=com.google.android.youtube;end" target="_blank">
+                <img src="ntv.jpg" alt="Channel 3 Logo">
+            </a>
+        </div>
+        <div class="channel">
+            <a href="intent://youtube.com/watch?v=VIDEO_ID_3#Intent;package=com.google.android.youtube;end" target="_blank">
+                <img src="etvap.jpg" alt="Channel 3 Logo">
+            </a>
+        </div>
+        <!-- Add more channel divs here as needed to fill the 4x4 grid -->
+    </div>
+</body>
+</html>
